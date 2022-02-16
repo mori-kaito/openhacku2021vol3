@@ -5,6 +5,5 @@ h1{
 }
 
 body{
-    background-color: rgba(46, 46, 46, 0.7);
-    color: rgba(227, 179, 29);
+    background-blend-mode: lighten;
 }
