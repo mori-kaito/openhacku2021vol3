@@ -1,4 +1,12 @@
-h1{
+.backimg{
+    background: url(https://www.illust-box.jp/db_img/sozai/00009/98128/watermark.jpg) no-repeat;
+}
+
+.backrgba{
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.sample{
     font-family: cursive;
     font-size: 100px;
     text-align: center;
