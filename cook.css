@@ -4,6 +4,10 @@ h1{
     text-align: center;
 }
 
-body{
-    background-blend-mode: lighten;
+.backimg{
+    background-image: "https://www.illust-box.jp/db_img/sozai/00009/98128/watermark.jpg"
+}
+
+.mozi{
+    background: rgba(255, 255, 255, 0.5);
 }
