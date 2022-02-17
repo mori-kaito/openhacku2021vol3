@@ -1,0 +1,41 @@
+.backimg{
+    border: 1px solid #000;
+    background-image: url(https://www.illust-box.jp/db_img/sozai/00009/98128/watermark.jpg);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode:lighten;
+}
+
+h1{
+    font-family: cursive;
+    font-size: 120px;
+    text-align: center;
+}
+
+ul.drop{
+    margin: 0px;
+    padding: 0px 0px 0px 15px;
+    background-color: brown;
+}
+
+ul.drop li {
+    width: 125px;           /* メニュー項目の横幅(125px) */
+    display: inline-block;  /* ★1:横並びに配置する */
+    list-style-type: none;  /* ★2:リストの先頭記号を消す */
+    position: relative;     /* ★3:サブメニュー表示の基準位置にする */
+ }
+
+ ul.ddmenu a {
+    background-color: #cc0000; /* メニュー項目の背景色(濃い赤色) */
+    color: white;              /* メニュー項目の文字色(白色) */
+    line-height: 40px;         /* メニュー項目のリンクの高さ(40px) */
+    text-align: center;        /* メインメニューの文字列の配置(中央寄せ) */
+    text-decoration: none;     /* メニュー項目の装飾(下線を消す) */
+    font-weight: bold;         /* 太字にする */
+    display: block;            /* ★4:項目内全域をリンク可能にする */
+ }
+
+ ul.ddmenu a:hover {
+    background-color: #ffdddd; /* メニュー項目にマウスが載ったときの背景色(淡いピンク) */
+    color: #dd0000;            /* メニュー項目にマウスが載ったときの文字色(濃い赤色) */
+ }
