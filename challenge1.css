@@ -19,7 +19,7 @@ ul.drop{
 }
 
 ul.drop li {
-    display: table;
+    display: inline-block;
  }
 
  ul.drop a {
