@@ -1,10 +1,7 @@
 .backimg{
-    width: 1420px;
-    height: 2000px;
     border: 1px solid #000;
     background-image: url(https://www.illust-box.jp/db_img/sozai/00009/98128/watermark.jpg);
     background-size: cover;
-    
 }
 
 .backrgba{
