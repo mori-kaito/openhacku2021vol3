@@ -6,6 +6,12 @@
     background-blend-mode:lighten;
 }
 
+h1{
+    font-family: cursive;
+    font-size: 120px;
+    text-align: center;
+}
+
 .nav {
     width: 750px;
     height: 40px;
