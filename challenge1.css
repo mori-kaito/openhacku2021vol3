@@ -19,7 +19,7 @@ ul.drop{
 }
 
 ul.drop li {
-    width: 125px;           /* メニュー項目の横幅(125px) */
+    width: 270;           /* メニュー項目の横幅(125px) */
     display: inline-block;  /* ★1:横並びに配置する */
     list-style-type: none;  /* ★2:リストの先頭記号を消す */
     position: relative;     /* ★3:サブメニュー表示の基準位置にする */
