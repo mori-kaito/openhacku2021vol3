@@ -25,7 +25,7 @@ ul.drop li {
     position: relative;     /* ★3:サブメニュー表示の基準位置にする */
  }
 
- ul.ddmenu a {
+ ul.drop a {
     background-color: #cc0000; /* メニュー項目の背景色(濃い赤色) */
     color: white;              /* メニュー項目の文字色(白色) */
     line-height: 40px;         /* メニュー項目のリンクの高さ(40px) */
@@ -35,7 +35,7 @@ ul.drop li {
     display: block;            /* ★4:項目内全域をリンク可能にする */
  }
 
- ul.ddmenu a:hover {
+ ul.drop a:hover {
     background-color: #ffdddd; /* メニュー項目にマウスが載ったときの背景色(淡いピンク) */
     color: #dd0000;            /* メニュー項目にマウスが載ったときの文字色(濃い赤色) */
  }
