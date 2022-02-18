@@ -13,10 +13,6 @@
     border-top: 1px solid #eee;
   }
 
-  .nav li:hover > ul > li {
-    overflow: visible;
-    height: 40px;
-  }
 
     .nav li ul li ul {
       top: 0;
