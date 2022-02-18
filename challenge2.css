@@ -26,9 +26,11 @@ h1{
 
 h2{
   display: block;
+  width: 65%;
   font-family: cursive;
   font-size: 70px;
-  margin-left: 18%;
+  margin-left: auto;
+  margin-right: auto;
   animation: move-y .5s infinite alternate ease-in-out;
 }
 
