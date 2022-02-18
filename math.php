@@ -116,7 +116,7 @@ $pdo = null;
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>TextBook Maker - math</title>
+<title>TextBook Maker - 数学</title>
 <style>
 </style>
 </head>
