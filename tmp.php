@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 // データベースの接続情報
 define( 'DB_HOST', 'localhost');
 define( 'DB_USER', 'root');
-define( 'DB_PASS', 'mkaito0124');
+define( 'DB_PASS', 'yoyrPassword');
 define( 'DB_NAME', 'kyoukasyo');
 
 // タイムゾーン設定
