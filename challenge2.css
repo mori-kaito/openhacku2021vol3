@@ -31,7 +31,7 @@ h1{
     color: #fff;
     font-size: 14px;
     line-height: 2.8;
-    background: #6b9bd4;
+    background: #0f76f3;
     transition: 0.5s;
     text-decoration: none;
     border-right: 1px solid #eee;
@@ -39,7 +39,7 @@ h1{
   }
   .nav > li:hover > a {/*layer-1*/
     color: orange;
-    background: #afc6e2;
+    background: #d4114c;
   }
   .nav > li li:hover > a {/*layer-2*/
     color: olive;
