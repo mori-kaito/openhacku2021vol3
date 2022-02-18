@@ -10,6 +10,17 @@ h1{
     font-family: cursive;
     font-size: 120px;
     text-align: center;
+
+    animation: move-y .5s infinite alternate ease-in-out;
+    display: inline-block;
+}
+@keyframes move-y {
+  from {
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(10px);
+  }
 }
 
 h2{
