@@ -115,10 +115,9 @@ $pdo = null;
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<title>TextBook Maker - 英語</title>
-<style>
-</style>
+	<meta charset="utf-8">
+	<title>TextBook Maker - 英語</title>
+	<link rel="stylesheet" type="text/css" href="kyoukasyo.css">
 </head>
 <body>
 <h1>英語</h1>

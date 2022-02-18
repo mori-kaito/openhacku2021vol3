@@ -115,13 +115,12 @@ $pdo = null;
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<title>TextBook Maker - 理科</title>
-<style>
-</style>
+	<meta charset="utf-8">
+	<title>TextBook Maker - 理科</title>
+	<link rel="stylesheet" type="text/css" href="kyoukasyo.css">
 </head>
 <body>
-<h1>理科</h1>
+	<h1>理科</h1>
 <?php if( !empty($success_message) ): ?>
     <p class="success_message"><?php echo $success_message; ?></p> 
 <?php endif; ?>
