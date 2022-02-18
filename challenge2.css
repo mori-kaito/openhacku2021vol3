@@ -1,7 +1,7 @@
 .backimg{
     border: 1px solid #000;
     background-image: url(https://media.istockphoto.com/vectors/seamless-pattern-work-notes-background-studying-creative-lifestyle-vector-id939498662);
-    background-size: cover;
+    background-size: contain;
     background-color: rgba(255, 255, 255, 0.6);
     background-blend-mode:lighten;
 }
