@@ -14,12 +14,11 @@ h1{
 
 h2{
   font-family: cursive;
-  font-size: 60px;
-  text-align: center;
-
+  font-size: 70px;
   animation: move-y .5s infinite alternate ease-in-out;
   display: inline-block;
 }
+
 @keyframes move-y {
   from {
     transform: translateY(0);
