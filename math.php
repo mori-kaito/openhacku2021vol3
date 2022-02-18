@@ -115,10 +115,9 @@ $pdo = null;
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<title>TextBook Maker - 数学</title>
-<style>
-</style>
+	<meta charset="utf-8">
+	<title>TextBook Maker - 数学</title>
+	<link rel="stylesheet" type="text/css" href="kyoukasyo.css">
 </head>
 <body>
 <h1>数学</h1>
