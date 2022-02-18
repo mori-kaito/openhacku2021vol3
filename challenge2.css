@@ -15,6 +15,7 @@ h1{
 h2{
   font-family: cursive;
   font-size: 70px;
+  text-align: center;
   animation: move-y .5s infinite alternate ease-in-out;
   display: inline-block;
 }
