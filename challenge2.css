@@ -14,7 +14,7 @@ h1{
 
 h2{
   font-family: cursive;
-  font-size: 60px;
+  font-size: 70px;
   text-align: center;
   animation: move-y .5s infinite alternate ease-in-out;
   display: inline-block;
@@ -27,6 +27,19 @@ h2{
   to{
     transform: translateY(10px);
   }
+}
+
+h3{
+  font-size: 24px;
+  text-align: center;
+}
+
+div.block1{
+  font-weight: bold;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 16px;
+  padding-right: 0px;
 }
 
 .nav {
