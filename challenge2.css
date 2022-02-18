@@ -50,7 +50,7 @@ h3{
 }
 
 .nav {
-    width: 1200px;
+    width: 1250px;
     height: 40px;
     margin: 0 auto;
     padding: 0;
@@ -62,7 +62,7 @@ h3{
   }
   .nav li a {
     display: block;
-    width: 200px;
+    width: 250px;
     height: 40px;
     text-align: center;
     color: #fff;
