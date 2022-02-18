@@ -12,7 +12,10 @@ h1{
     text-align: center;
 }
 
-.ani{
+h2{
+  font-family: cursive;
+  font-size: 60px;
+  text-align: center;
   animation: move-y .5s infinite alternate ease-in-out;
   display: inline-block;
 }
@@ -24,12 +27,6 @@ h1{
   to{
     transform: translateY(10px);
   }
-}
-
-h2{
-  font-family: cursive;
-  font-size: 60px;
-  text-align: center;
 }
 
 .nav {
