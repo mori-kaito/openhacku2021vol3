@@ -166,8 +166,9 @@ $pdo = null;
 						<tr><td><?php echo $row['view_name']?></td><td><?php echo $row['message']?></td></tr>
 					<?php endforeach; ?>
 				</table>
-			<?php if(empty($result))?>
-				not found
+			<?php if(empty($result))
+				echo "not found"
+			?>
 		</div>
 		<?php if( empty($_POST['btn_submit']) && !empty($_SESSION['success_message']) ): ?>
 			<p class="success_message"><?php echo htmlspecialchars( $_SESSION['success_message'], ENT_QUOTES, 'UTF-8'); ?></p> 
