@@ -33,35 +33,6 @@ $dsn = 'mysql:host=localhost;dbname=kyoukasyo';
 $username = 'root';
 $password = 'yourPassword';
 
-if ($_POST) {
-	try {
-		$dbh = new PDO($dsn, $username, $password);
-		$search_word = $_POST['word'];
-		if($search_word==""){
-		  echo "input search word";
-		}
-		else{
-			$sql ="select * from japanese where message like'".$search_word."%'";
-			$sth = $dbh->prepare($sql);
-			$sth->execute();
-			$result = $sth->fetchAll();
-			if($result){
-				foreach ($result as $row) {
-					echo $row['view_name']. " ";
-					echo $row['message'];
-					echo "<br />";
-				}
-			}
-			else{
-				echo "not found";
-			}
-		}
-	}catch (PDOException $e) {
-		echo  "<p>Failed : " . $e->getMessage()."</p>";
-		exit();
-	}
-}
-
 session_start();
 
 // データベースに接続
@@ -149,6 +120,36 @@ if( !empty($pdo) ) {
 	$sql = "SELECT view_name,message,post_date FROM japanese ORDER BY post_date DESC";
 	$message_array = $pdo->query($sql);
 }
+
+if ($_POST) {
+	try {
+		$dbh = new PDO($dsn, $username, $password);
+		$search_word = $_POST['word'];
+		if($search_word==""){
+		  echo "input search word";
+		}
+		else{
+			$sql ="select * from japanese where message like'".$search_word."%'";
+			$sth = $dbh->prepare($sql);
+			$sth->execute();
+			$result = $sth->fetchAll();
+			if($result){
+				foreach ($result as $row) {
+					echo $row['view_name']. " ";
+					echo $row['message'];
+					echo "<br />";
+				}
+			}
+			else{
+				echo "not found";
+			}
+		}
+	}catch (PDOException $e) {
+		echo  "<p>Failed : " . $e->getMessage()."</p>";
+		exit();
+	}
+}
+
 
 // データベースの接続を閉じる
 $pdo = null;
