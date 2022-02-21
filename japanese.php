@@ -125,7 +125,7 @@ if ($_POST) {
 		  echo "input search word";
 		}
 		else{
-			$sql ="select * from japanese where message like'".$search_word."%'";
+			$sql ="select * from japanese where message like '%".$search_word."%'";
 			$sth = $dbh->prepare($sql);
 			$sth->execute();
 			$result = $sth->fetchAll();
