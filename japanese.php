@@ -164,8 +164,9 @@ $pdo = null;
 		</div>
 		<div>
 			<form action="" method="POST">
-				<label>検索:</label>
-				<input type="text" name="word"> <input type="submit" value="検索">
+				<label>検索</label>
+				<input type="text" name="word"><br>
+				<input type="submit" value="テキスト検索">
 			</form>
 		</div>
 		<?php if( empty($_POST['btn_submit']) && !empty($_SESSION['success_message']) ): ?>
