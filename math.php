@@ -120,6 +120,7 @@ $pdo = null;
 	<link rel="stylesheet" type="text/css" href="kyoukasyo.css">
 </head>
 <body>
+<div class="backimg">
 <h1>数学</h1>
 <?php if( !empty($success_message) ): ?>
     <p class="success_message"><?php echo $success_message; ?></p> 
@@ -156,5 +157,6 @@ $pdo = null;
 <?php } ?>
 <?php } ?>
 </section>
+</div>
 </body>
 </html>
