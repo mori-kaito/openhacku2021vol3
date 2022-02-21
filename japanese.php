@@ -24,6 +24,7 @@ $stmt = null;
 $res = null;
 $option = null;
 $result = array();
+$search_word = null;
 $dsn = 'mysql:host=localhost;dbname=kyoukasyo';
 $username = 'root';
 $password = 'yourPassword';
@@ -166,7 +167,7 @@ $pdo = null;
 						<tr><td><?php echo $row['view_name']?></td><td><?php echo $row['message']?></td></tr>
 					<?php endforeach; ?>
 				</table>
-			<?php if(empty($result))
+			<?php if(empty($result) && $search_word)
 				echo "not found"
 			?>
 		</div>
