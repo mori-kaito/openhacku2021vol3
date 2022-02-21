@@ -87,9 +87,10 @@ Common Style
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.7);
     background-blend-mode:lighten;
-}
-body {
     padding: 50px;
+}
+
+body {
 	font-size: 100%;
 	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
     color: #222;
@@ -102,7 +103,6 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-	margin-bottom: 30px;
     font-size: 30px;
     color: #222;
     text-align: center;
