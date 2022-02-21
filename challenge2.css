@@ -9,6 +9,7 @@
 .center{
   margin: 20px auto;
   text-align: center;
+  font-family: serif;
   font-size: 20px;
   display: block;
 }
@@ -19,7 +20,7 @@
 }
 
 h1{
-    font-family: serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 120px;
     text-align: center;
 }
