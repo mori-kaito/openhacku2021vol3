@@ -85,7 +85,7 @@ body {
 	padding: 50px;
 	font-size: 100%;
 	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
-	background-image: url("img.jpg");
+	background-image: #f7f7f7;
 }
 a {
     color: #007edf;
