@@ -123,42 +123,44 @@ $pdo = null;
 	<link rel="stylesheet" type="text/css" href="kyoukasyo.css">
 </head>
 <body>
-<h1>社会</h1>
-<?php if( empty($_POST['btn_submit']) && !empty($_SESSION['success_message']) ): ?>
-	<p class="success_message"><?php echo htmlspecialchars( $_SESSION['success_message'], ENT_QUOTES, 'UTF-8'); ?></p> 
-	<?php unset($_SESSION['success_message']); ?>
-<?php endif; ?>
-<?php if( !empty($error_message) ): ?>
-    <ul class="error_message">
-		<?php foreach( $error_message as $value ): ?>
-            <li>・<?php echo $value; ?></li>
-		<?php endforeach; ?>
-    </ul>
-<?php endif; ?>
-<form method="post">
-	<div>
-		<label for="view_name">表示名</label>
-		<input id="view_name" type="text" name="view_name" value="<?php if( !empty($_SESSION['view_name']) ){ echo htmlspecialchars( $_SESSION['view_name'], ENT_QUOTES, 'UTF-8'); } ?>">
+	<div class="backimg">
+		<h1>社会</h1>
+		<?php if( empty($_POST['btn_submit']) && !empty($_SESSION['success_message']) ): ?>
+			<p class="success_message"><?php echo htmlspecialchars( $_SESSION['success_message'], ENT_QUOTES, 'UTF-8'); ?></p> 
+			<?php unset($_SESSION['success_message']); ?>
+		<?php endif; ?>
+		<?php if( !empty($error_message) ): ?>
+			<ul class="error_message">
+				<?php foreach( $error_message as $value ): ?>
+					<li>・<?php echo $value; ?></li>
+				<?php endforeach; ?>
+			</ul>
+		<?php endif; ?>
+		<form method="post">
+			<div>
+				<label for="view_name">表示名</label>
+				<input id="view_name" type="text" name="view_name" value="<?php if( !empty($_SESSION['view_name']) ){ echo htmlspecialchars( $_SESSION['view_name'], ENT_QUOTES, 'UTF-8'); } ?>">
+			</div>
+			<div>
+				<label for="message">TextBook</label>
+				<textarea id="message" name="message"></textarea>
+			</div>
+			<input type="submit" name="btn_submit" value="書き込む">
+		</form>
+		<hr>
+		<section>
+		<?php if( !empty($message_array) ){ ?>
+		<?php foreach( $message_array as $value ){ ?>
+		<article>
+			<div class="info">
+				<h2><?php echo htmlspecialchars( $value['view_name'], ENT_QUOTES, 'UTF-8'); ?></h2>
+				<time><?php echo date('Y年m月d日 H:i', strtotime($value['post_date'])); ?></time>
+			</div>
+			<p><?php echo nl2br( htmlspecialchars( $value['message'], ENT_QUOTES, 'UTF-8') ); ?></p>
+		</article>
+		<?php } ?>
+		<?php } ?>
+		</section>
 	</div>
-	<div>
-		<label for="message">TextBook</label>
-		<textarea id="message" name="message"></textarea>
-	</div>
-	<input type="submit" name="btn_submit" value="書き込む">
-</form>
-<hr>
-<section>
-<?php if( !empty($message_array) ){ ?>
-<?php foreach( $message_array as $value ){ ?>
-<article>
-    <div class="info">
-        <h2><?php echo htmlspecialchars( $value['view_name'], ENT_QUOTES, 'UTF-8'); ?></h2>
-        <time><?php echo date('Y年m月d日 H:i', strtotime($value['post_date'])); ?></time>
-    </div>
-    <p><?php echo nl2br( htmlspecialchars( $value['message'], ENT_QUOTES, 'UTF-8') ); ?></p>
-</article>
-<?php } ?>
-<?php } ?>
-</section>
 </body>
 </html>
