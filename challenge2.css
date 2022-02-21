@@ -19,14 +19,14 @@
 }
 
 h1{
-    font-family: cursive;
+    font-family: serif;
     font-size: 120px;
     text-align: center;
 }
 
 h2{
   display: inline-block;
-  font-family: cursive;
+  font-family: serif;
   font-size: 70px;
   animation: move-y .5s infinite alternate ease-in-out;
 }
