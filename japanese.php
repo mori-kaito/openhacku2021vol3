@@ -1,4 +1,11 @@
+<form action="" method="POST">
+        <label>検索:</label>
+        <input type="text" name="word" /> <input type="submit" value="Search" />
+</form>
+
 <?php
+
+
 // エラー内容の表示
 ini_set("display_errors", 1);
 error_reporting(E_ALL);
@@ -22,6 +29,38 @@ $pdo = null;
 $stmt = null;
 $res = null;
 $option = null;
+$dsn = 'mysql:host=localhost;dbname=kyoukasyo';
+$username = 'root';
+$password = 'yourPassword';
+
+if ($_POST) {
+	try {
+		$dbh = new PDO($dsn, $username, $password);
+		$search_word = $_POST['word'];
+		if($search_word==""){
+		  echo "input search word";
+		}
+		else{
+			$sql ="select * from japanese where message like'".$search_word."%'";
+			$sth = $dbh->prepare($sql);
+			$sth->execute();
+			$result = $sth->fetchAll();
+			if($result){
+				foreach ($result as $row) {
+					echo $row['view_name']. " ";
+					echo $row['message'];
+					echo "<br />";
+				}
+			}
+			else{
+				echo "not found";
+			}
+		}
+	}catch (PDOException $e) {
+		echo  "<p>Failed : " . $e->getMessage()."</p>";
+		exit();
+	}
+}
 
 session_start();
 
