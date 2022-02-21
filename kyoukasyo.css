@@ -1,4 +1,4 @@
-html, div, span, object, iframe,
+html, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
@@ -81,16 +81,18 @@ input, select {
 /*------------------------------
 Common Style
 ------------------------------*/
-body {
-	padding: 50px;
-	font-size: 100%;
-	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
-    color: #222;
+.backimg{
     border: 1px solid #000;
 	background-image: url("img.jpg");
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.7);
     background-blend-mode:lighten;
+}
+body {
+    padding: 50px;
+	font-size: 100%;
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+    color: #222;
 }
 a {
     color: #007edf;
