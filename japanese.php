@@ -124,7 +124,10 @@ $pdo = null;
 </head>
 <body>
 	<div class="backimg">
-		<h1>国語</h1>
+		<div>
+			<h1>国語</h1>
+			<a href="http://localhost" class="btn_home">教科選択</a>
+		</div>
 		<?php if( empty($_POST['btn_submit']) && !empty($_SESSION['success_message']) ): ?>
 			<p class="success_message"><?php echo htmlspecialchars( $_SESSION['success_message'], ENT_QUOTES, 'UTF-8'); ?></p> 
 			<?php unset($_SESSION['success_message']); ?>

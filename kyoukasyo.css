@@ -108,6 +108,24 @@ h1 {
     color: #222;
     text-align: center;
 }
+.btn_home {
+	margin-bottom: 20px;
+	padding: 10px 20px;
+	color: #fff;
+	font-size: 86%;
+	line-height: 1.0em;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	background-color:#32CD32;
+	text-decoration: none;
+	float: right;
+}
+
+.btn_home:hover {
+	background-color: #00cc00;
+	text-decoration: none;
+}
 /*-----------------------------------
 入力エリア
 -----------------------------------*/
