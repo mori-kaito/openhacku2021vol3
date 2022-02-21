@@ -22,6 +22,11 @@ $pdo = null;
 $stmt = null;
 $res = null;
 $option = null;
+$result = array();
+$search_word = null;
+$dsn = 'mysql:host=localhost;dbname=kyoukasyo';
+$username = 'root';
+$password = 'yourPassword';
 
 session_start();
 
@@ -111,6 +116,25 @@ if( !empty($pdo) ) {
 	$message_array = $pdo->query($sql);
 }
 
+if ($_POST) {
+	try {
+		$dbh = new PDO($dsn, $username, $password);
+		$search_word = $_POST['word'];
+		if($search_word==""){
+		  //echo "input search word";
+		}
+		else{
+			$sql ="select * from math where message like '%".$search_word."%'";
+			$sth = $dbh->prepare($sql);
+			$sth->execute();
+			$result = $sth->fetchAll();
+		}
+	}catch (PDOException $e) {
+		echo  "<p>Failed : " . $e->getMessage()."</p>";
+		exit();
+	}
+}
+
 // データベースの接続を閉じる
 $pdo = null;
 
@@ -127,6 +151,23 @@ $pdo = null;
 		<div>
 			<h1>数学</h1>
 			<a href="http://localhost" class="btn_home">教科選択</a>
+		</div>
+		<div>
+			<form action="" method="POST">
+				<label>検索</label>
+				<input type="text" name="word"><br>
+				<input type="submit" value="テキスト検索">
+			</form>
+			<?php if($result)?>
+				<table>
+					<tr><th>表示名</th><th>テキスト</th></tr>
+					<?php foreach ($result as $row): ?>
+						<tr><td><?php echo $row['view_name']?></td><td><?php echo $row['message']?></td></tr>
+					<?php endforeach; ?>
+				</table>
+			<?php if(empty($result) && $search_word)
+				echo "not found"
+			?>
 		</div>
 		<?php if( empty($_POST['btn_submit']) && !empty($_SESSION['success_message']) ): ?>
 			<p class="success_message"><?php echo htmlspecialchars( $_SESSION['success_message'], ENT_QUOTES, 'UTF-8'); ?></p> 

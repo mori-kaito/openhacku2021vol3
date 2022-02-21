@@ -1,5 +1,4 @@
 <?php
-
 // エラー内容の表示
 ini_set("display_errors", 1);
 error_reporting(E_ALL);
