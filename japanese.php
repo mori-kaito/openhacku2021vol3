@@ -128,12 +128,6 @@ if ($_POST) {
 			$sth = $dbh->prepare($sql);
 			$sth->execute();
 			$result = $sth->fetchAll();
-			if($result){
-				
-			}
-			else{
-				echo "not found";
-			}
 		}
 	}catch (PDOException $e) {
 		echo  "<p>Failed : " . $e->getMessage()."</p>";
