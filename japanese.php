@@ -1,10 +1,4 @@
-<form action="" method="POST">
-        <label>検索:</label>
-        <input type="text" name="word" /> <input type="submit" value="Search" />
-</form>
-
 <?php
-
 
 // エラー内容の表示
 ini_set("display_errors", 1);
@@ -167,6 +161,12 @@ $pdo = null;
 		<div>
 			<h1>国語</h1>
 			<a href="http://localhost" class="btn_home">教科選択</a>
+		</div>
+		<div>
+			<form action="" method="POST">
+				<label>検索:</label>
+				<input type="text" name="word"> <input type="submit" value="検索">
+			</form>
 		</div>
 		<?php if( empty($_POST['btn_submit']) && !empty($_SESSION['success_message']) ): ?>
 			<p class="success_message"><?php echo htmlspecialchars( $_SESSION['success_message'], ENT_QUOTES, 'UTF-8'); ?></p> 
