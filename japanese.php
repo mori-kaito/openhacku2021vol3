@@ -23,6 +23,7 @@ $pdo = null;
 $stmt = null;
 $res = null;
 $option = null;
+$result = array();
 $dsn = 'mysql:host=localhost;dbname=kyoukasyo';
 $username = 'root';
 $password = 'yourPassword';
@@ -168,6 +169,12 @@ $pdo = null;
 				<input type="text" name="word"><br>
 				<input type="submit" value="テキスト検索">
 			</form>
+			<table>
+				<tr><th>表示名</th><th>テキスト</th></tr>
+				<?php foreach ($result as $row): ?>
+					<tr><td><?php echo $row['view_name']?></td><td><?php echo $row['message']?></td></tr>
+				<?php endforeach; ?>
+			</table>aw
 		</div>
 		<?php if( empty($_POST['btn_submit']) && !empty($_SESSION['success_message']) ): ?>
 			<p class="success_message"><?php echo htmlspecialchars( $_SESSION['success_message'], ENT_QUOTES, 'UTF-8'); ?></p> 
