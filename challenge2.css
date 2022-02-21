@@ -27,7 +27,7 @@ h1{
 
 h2{
   display: inline-block;
-  font-family: serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 70px;
   animation: move-y .5s infinite alternate ease-in-out;
 }
