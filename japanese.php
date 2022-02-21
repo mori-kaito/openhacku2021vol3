@@ -122,7 +122,7 @@ if ($_POST) {
 		$dbh = new PDO($dsn, $username, $password);
 		$search_word = $_POST['word'];
 		if($search_word==""){
-		  echo "input search word";
+		  //echo "input search word";
 		}
 		else{
 			$sql ="select * from japanese where message like '%".$search_word."%'";
