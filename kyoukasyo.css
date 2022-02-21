@@ -120,10 +120,10 @@ input[type="text"],
 textarea {
 	margin-bottom: 20px;
 	padding: 10px;
-	font-size: 86%;
+	font-size: 110%;
     border: 1px solid #ddd;
     border-radius: 3px;
-    background: #fff;
+    background: #f7f7f7;
 }
 input[type="text"] {
 	width: 200px;
