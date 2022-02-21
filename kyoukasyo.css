@@ -103,7 +103,8 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 30px;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
     color: #222;
     text-align: center;
 }
