@@ -64,7 +64,7 @@ abbr[title], dfn[title] {
     cursor:help;
 }
 table {
-    border-collapse:collapse;
+    border-collapse:separate;
     border-spacing:5px;
     margin-bottom: 40px;
 }
