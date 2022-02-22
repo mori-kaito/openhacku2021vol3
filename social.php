@@ -143,7 +143,7 @@ $pdo = null;
 <html lang="ja">
 <head>
 	<meta charset="utf-8">
-	<title>TextBook Maker - 社会</title>
+	<title>Text+ - 社会</title>
 	<link rel="stylesheet" type="text/css" href="kyoukasyo.css">
 </head>
 <body>
