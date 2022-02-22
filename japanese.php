@@ -159,13 +159,16 @@ $pdo = null;
 				<input type="text" name="word"><br>
 				<input type="submit" value="テキスト検索">
 			</form>
-			<?php if($result)?>
-				<table>
-					<tr><th>表示名</th><th>テキスト</th></tr>
-					<?php foreach ($result as $row): ?>
-						<tr><td><?php echo $row['view_name']?></td><td><?php echo $row['message']?></td></tr>
-					<?php endforeach; ?>
-				</table>
+			<table>
+				<?php 
+					if($result){
+						echo "<tr><th>表示名</th><th>テキスト</th></tr>";
+						foreach ($result as $row){
+							echo "<tr><td>". $row['view_name'] ."</td><td>". $row['message'] ."</td></tr>";
+						}
+					}
+				?>
+			</table>
 			<?php if(empty($result) && $search_word)
 				echo "not found"
 			?>
