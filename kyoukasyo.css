@@ -68,6 +68,17 @@ table {
     border-spacing:5px;
     margin-bottom: 40px;
 }
+
+table th {
+    border:1px solid #4dc100;
+    background:#00cc00;
+}
+
+table.sample td{
+    border:1px solid #4dc100;
+    background:#f7f7f7;
+  }
+
 hr {
     display:block;
     height:1px;
