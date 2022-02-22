@@ -168,7 +168,7 @@ $pdo = null;
 						}
 					}
 					if(empty($result) && $search_word){
-						echo "not found";
+						echo "Not Found";
 					}
 				?>
 			</table>
