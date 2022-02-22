@@ -166,11 +166,11 @@ $pdo = null;
 							echo "<tr><td>". $row['view_name'] ."</td><td>". $row['message'] ."</td></tr>";
 						}
 					}
+					if(empty($result) && $search_word){
+						echo "not found";
+					}
 				?>
 			</table>
-			<?php if(empty($result) && $search_word)
-				echo "not found"
-			?>
 		</div>
 		<?php if( empty($_POST['btn_submit']) && !empty($_SESSION['success_message']) ): ?>
 			<p class="success_message"><?php echo htmlspecialchars( $_SESSION['success_message'], ENT_QUOTES, 'UTF-8'); ?></p> 
