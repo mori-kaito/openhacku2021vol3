@@ -2,7 +2,7 @@
     border: 1px solid #000;
     background-image: url("img.jpg");
     background-size: cover;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     background-blend-mode:lighten;
 }
 
@@ -10,7 +10,7 @@
   margin: 20px auto;
   text-align: center;
   font-family: serif;
-  font-size: 20px;
+  font-size: 25px;
   display: block;
 }
 

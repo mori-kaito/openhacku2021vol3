@@ -1,5 +1,4 @@
 <?php
-
 // エラー内容の表示
 ini_set("display_errors", 1);
 error_reporting(E_ALL);
@@ -122,7 +121,7 @@ if ($_POST) {
 		$dbh = new PDO($dsn, $username, $password);
 		$search_word = $_POST['word'];
 		if($search_word==""){
-		  echo "input search word";
+		  //echo "input search word";
 		}
 		else{
 			$sql ="select * from japanese where message like '%".$search_word."%'";
