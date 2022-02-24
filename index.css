@@ -23,6 +23,7 @@ h1{
     font-family: 'Times New Roman', Times, serif;
     font-size: 140px;
     text-align: center;
+    text-shadow: 1px 1px 2px silver;
 }
 
 h2{
