@@ -65,8 +65,21 @@ abbr[title], dfn[title] {
 }
 table {
     border-collapse:collapse;
-    border-spacing:5px;
+    border-spacing:15px;
     margin-bottom: 40px;
+    width: 25%;
+    font-size: large;
+}
+table th {
+    color: #ffffff;
+    border:1px solid #00cc00;
+    background:#32CD32;
+    padding: 10px;
+}
+table td{
+    border:1px solid #00cc00;
+    background:#f7f7f7;
+    padding: 3px 10px;
 }
 hr {
     display:block;
